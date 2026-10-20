@@ -1,26 +1,80 @@
+/* Pengaturan Tampilan Halaman Utama */
 body {
-    background-color: #FFFFE0; /* Warna kuning cerah */
-    font-family: Aril, sans-serif; /* Jenis huruf yang bersih dan mudah dibaca */
+    background-color: #f4f7f6; /* Warna latar belakang yang lebih lembut di mata */
+    font-family: Arial, sans-serif; /* Penulisan 'Arial' disempurnakan (sebelumnya Aril) */
     color: #191970; /* Warna teks utama (Biru Gelap) */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
+/* Pengaturan Kartu Profil (Penggabungan Aturan CSS) */
 .kartu-profil {
     width: 300px;
-    margin: 50px auto; /* 50px jarak atas/bawah, auto menengahkan kiri/kanan */
-    padding: 20px;
-    background-color: white;
-    border-radius: 15px; /* Membuat sudut menjadi melengkung */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Efek bayangan */
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 15px; /* Membuat sudut kartu melengkung */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Efek bayangan lembut */
+    text-align: center; /* Menengahkan seluruh teks dan elemen di dalam kartu */
 }
 
-
+/* Foto Profil Lingkaran */
 .kartu-profil img {
-    width: 150px;
-    border-radius: 50%; /* Trik untuk membuat gambar persegi menjadi lingkaran sempurna */
+    width: 130px;
+    height: 130px;
+    object-fit: cover; /* Mencegah gambar terdistorsi/gepeng */
+    border-radius: 50%; /* Membuat gambar persegi menjadi lingkaran sempurna */
+    margin-bottom: 15px;
+    border: 3px solid #007bff;
 }
 
-.kartu-profil {
-    /* ... (kode dari slide sebelumnya) ... */
-    text-align: center; /* Menengahkan semua teks di dalam kartu */
+/* Judul Nama */
+.kartu-profil h1 {
+    font-size: 22px;
+    margin: 10px 0;
+    color: #333333;
 }
 
+/* Deskripsi Teks */
+.kartu-profil p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #666666;
+    margin-bottom: 15px;
+}
+
+/* Desain Link Instagram */
+.link-instagram {
+    display: inline-block;
+    margin-bottom: 15px;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.link-instagram:hover {
+    text-decoration: underline;
+}
+
+/* Desain Tombol */
+#sapaButton {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#sapaButton:hover {
+    background-color: #0056b3; /* Warna tombol sedikit gelap saat disorot */
+}
